@@ -1,13 +1,18 @@
 {{ define "main" }}
 
+<!--Header-->
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+<!--What is Democratic Socialism-->
 {{ partial "short-text" .Params.blurb}}
 
-{{ partial "2-up" .Params }}
+<!--Priorities-->
+{{ partial "2-up" (dict "intro" .Params.intro "blurbs" .Params.priorities "buttonText" "Read about our priorities" "buttonLink" "/priorities") }}
 
+<!--Working Groups-->
 {{ partial "text-and-image" (dict "heading" .Params.working_groups.heading "text" .Params.working_groups.text "buttonText" "Read more" "buttonLink" "/working_groups") }}
 
+<!--Latest Blog Posts-->
 {{ partial "blog" . }}
 
 {{ end }}
