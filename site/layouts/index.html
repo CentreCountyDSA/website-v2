@@ -3,14 +3,17 @@
 <!--Header-->
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
+<!--Upcoming Events-->
+{{ partial "events_widget" . }}
+
 <!--What is Democratic Socialism-->
-{{ partial "short-text" .Params.blurb}}
+{{ partial "intro-blurb" .Params.intro_blurb}}
 
 <!--Priorities-->
-{{ partial "2-up" (dict "intro" .Params.intro "blurbs" .Params.priorities "buttonText" "Read about our priorities" "buttonLink" "/priorities") }}
+{{ partial "priorities_widget" .}}
 
 <!--Working Groups-->
-{{ partial "text-and-image" (dict "heading" .Params.working_groups.heading "text" .Params.working_groups.text "buttonText" "Read more" "buttonLink" "/working_groups") }}
+{{ partial "working_groups_widget" . }}
 
 <!--Latest Blog Posts-->
 {{ partial "blog" . }}
