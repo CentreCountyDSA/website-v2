@@ -22,9 +22,11 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Event Date", name: "event_date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Show On Front", name: "show_front", widget: "boolean"}
   - name: "working_group" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Working Group" # Used in the UI, ie.: "New Post"
     folder: "site/content/working_group" # The path to the folder where the documents are stored
@@ -34,12 +36,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Subtitle", name: "subtitle", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "priorities" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Chapter Priorities" # Used in the UI, ie.: "New Post"
+  - name: "priority" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Chapter Priority" # Used in the UI, ie.: "New Post"
     folder: "site/content/priority" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -56,15 +58,3 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Intro Blurb", name: intro_blurb, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Priorities", name: priorities, widget: object, fields: [
-              {label: Priority List, name: priorities_list, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]},
-              {label: "Button Text", name: "button_text", widget: "text"},
-              {label: "Button Link", name: "button_link", widget: "text"}
-              ]}
-          - {label: "Working Groups", name: "working_groups", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"},
-              {label: Working Group List, name: working_group_list, widget: list, fields: [{label: Name, name: name, widget: string}]},
-              {label: "Button Text", name: "button_text", widget: "text"},
-              {label: "Button Link", name: "button_link", widget: "text"}
-              ]}
