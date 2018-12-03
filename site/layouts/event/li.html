@@ -1,6 +1,11 @@
 <a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
 	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
-	<p class="mb0">{{ .Params.event_date }}</p>
+	<p class="mb0">{{ dateFormat "Monday, Jan 2, 2006" .Params.event_date }}</p>
+	
+	{{$time := time .Params.event_date}}
+	<!-- TODO: Format time -->
+	<p class="mb0">{{ $time.Hour }}:{{ $time.Minute }}</p>	
+	
 	{{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
 	<p class="link b dib black mb0">Read more →</p>
 </a>
