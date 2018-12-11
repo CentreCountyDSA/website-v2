@@ -4,18 +4,18 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 <!--Upcoming Events-->
-{{ partial "events_widget" . }}
+{{ partial "homepage/events" . }}
 
 <!--What is Democratic Socialism-->
-{{ partial "intro-blurb" .Params.intro_blurb}}
+{{ partial "homepage/intro" .Params.intro_blurb}}
 
 <!--Priorities-->
-{{ partial "priorities_widget" .}}
+{{ partial "homepage/priorities" .}}
 
-<!--Working Groups-->
-{{ partial "working_groups_widget" . }}
+<!--List of Working Groups-->
+{{ partial "homepage/working_groups" . }}
 
 <!--Latest Blog Posts-->
-{{ partial "blog_widget" . }}
+{{ partial "homepage/blog_latest" . }}
 
 {{ end }}
