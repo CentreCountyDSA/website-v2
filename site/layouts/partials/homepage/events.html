@@ -6,7 +6,13 @@
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
 			{{ range where (where .Data.Pages "Type" "event") ".Params.show_front" "==" true }}
 				<div class="ph1-ns w-50-ns flex">
-					{{ .Render "li" }}
+					<a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
+						<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
+						<p class="mb0">{{ dateFormat "Monday, Jan 2, 2006" .Params.event_date }}</p>
+						<p class="mb0">{{ .Params.event_time}}</p>
+						<p>{{ .Params.event_location }}</p>
+						<p class="link b dib black mb0">Read more →</p>
+					</a>
 				</div>
 			{{ end }}
 		</div>
