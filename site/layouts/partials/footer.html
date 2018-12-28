@@ -17,11 +17,15 @@
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">Centre County DSA</h3>
 				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/get_involved" class="link">Get Involved</a></li>
-					<li><a href="/event" class="link">Events</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/members" class="link">For Members</a></li>
+					{{ $currentPage := . }}
+					{{ range .Site.Menus.main }}
+						<li>
+							<a href="{{ .URL }}">
+								{{ .Pre }}
+								<span>{{ .Name }}</span>
+							</a>
+						</li>
+					{{ end }}
 				</ul>
 			</div>
 

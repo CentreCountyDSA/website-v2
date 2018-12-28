@@ -1,3 +1,138 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Homepage"
+
+[menu]
+
+  ###################
+  # Main Menu (nav) #
+  ###################
+
+  # Home
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = -120
+
+  # About Section
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    weight = -115
+    url = "/about"
+
+  [[menu.main]]
+    parent = "about"
+    name = "What is DSA?"
+    url = "/about/what_is_dsa"
+
+  [[menu.main]]
+    parent = "about"
+    name = "Where We Organize"
+    url = "/about/where_we_organize"
+  
+  [[menu.main]]
+    parent = "about"
+    name = "Our Priorities"
+    url = "/about/priorities"
+
+  # Get Involved Section
+
+  [[menu.main]]
+    identifier = "get_involved"
+    name = "Get Involved"
+    weight = -110
+    url = "/get_involved"
+
+  [[menu.main]]
+    parent = "get_involved"
+    name = "Events"
+    url = "/event"
+
+  [[menu.main]]
+    parent = "get_involved"
+    name = "Become a Member"
+    url = "/get_involved/become_a_member"
+
+  [[menu.main]]
+    parent = "get_involved"
+    name = "Working Groups"
+    url = "/working_group"
+
+  [[menu.main]]
+    parent = "get_involved"
+    name = "Current Campaigns"
+    url = "/campaign"
+
+  #  Blog
+  [[menu.main]]
+    identifier = "post"
+    name = "Blog"
+    url = "/post"
+    weight = -105
+
+  # For Members
+  [[menu.main]]
+    identifier = "for_members"
+    name = "For Members"
+    weight = -100
+    url = "/for_members"
+
+  [[menu.main]]
+    parent = "for_members"
+    name = "Bylaws"
+    url = "/for_members/bylaws"
+
+  [[menu.main]]
+    parent = "for_members"
+    name = "New Member Info"
+    url = "/for_members/new_member_info"
+
+  [[menu.main]]
+    parent = "for_members"
+    name = "Downloads"
+    url = "/for_members/downloads"
+  
+  ###############
+  # Footer menu #
+  ###############
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = -120
+
+  # About Section
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    weight = -115
+    url = "/about"
+
+  # Get Involved Section
+
+  [[menu.main]]
+    identifier = "get_involved"
+    name = "Get Involved"
+    weight = -110
+    url = "/get_involved"
+
+  #  Blog
+  [[menu.main]]
+    identifier = "post"
+    name = "Blog"
+    url = "/post"
+    weight = -105
+
+  # For Members
+  [[menu.main]]
+    identifier = "for_members"
+    name = "For Members"
+    weight = -100
+    url = "/for_members"
+  

@@ -38,15 +38,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Subtitle", name: "subtitle", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "priority" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Chapter Priority" # Used in the UI, ie.: "New Post"
-    folder: "site/content/priority" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
@@ -60,3 +51,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Intro Blurb", name: intro_blurb, widget: object, fields: [
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
+      - file: "site/content/priorities.md"
+        label: "Our Priorities"
+        name: "priorities"
+        fields:
+          - {label: Title, name: title, widget: string} 
+          - {label: Subtitle, name: subtitle, widget: string}
+          - label: Priorities
+            name: priorities
+            widget: list
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Image, name: image, widget: image}

@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Our Current Campaigns") }}
+
+<div>
+  <h1>What are campaigns?</h1>
+  <p>Campaigns are organized by working groups as a way to publically work towards the goals of the working group.</p>
+</div>
+
+<div class="mw7 center">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+      {{ range .Pages }}
+          <div class="w-50-ns ph1-ns flex">
+            {{ .Render "li"}}
+          </div>
+      {{ end }}
+  </ul>
+</div>
+
+{{end}}
