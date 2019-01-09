@@ -3,8 +3,8 @@
   <div class="mw6 center ph3 pv4">
     <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
     <div class="flex justify-between grey-3">
-      <p>{{ dateFormat "Monday, Jan 2, 2006" .Params.event_date }}</p>
-      <p>{{ .Params.event_time}}</p>
+      <p>{{ dateFormat "Monday, Jan 2, 2006" .Params.event_datetime }}</p>
+      <p class="mb0">{{ dateFormat "3:04 PM" .Params.event_datetime}}</p>
     </div>
     <p>{{ .Params.event_location }}</p>
     <div class="cms mw6">

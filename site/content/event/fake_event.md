@@ -1,7 +1,6 @@
 ---
 title: Something Fake Event
-event_date: 2019-01-10
-event_time: "8:00 PM"
+event_datetime: 2019-01-10 18:00:00
 event_location: "TBD"
 description: >-
   Test
