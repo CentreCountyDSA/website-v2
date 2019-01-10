@@ -1,7 +1,7 @@
 ---
 title: Wage Theft
 subtitle: Our first campaign
-image: /img/flyer.png
+image: ''
 summary: Our first campaign
 ---
-What we are doing...
+![Wage Theft Flyer](/img/flyer.png)
