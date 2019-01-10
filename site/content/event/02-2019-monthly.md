@@ -5,7 +5,6 @@ event_location: "Municipal Building Room 203"
 description: >-
   Our second monthly meeting of the year
 image: /img/blog-chemex.jpg
-show_front: true
 ---
 
 THIS IS A BUNCH OF TEXT

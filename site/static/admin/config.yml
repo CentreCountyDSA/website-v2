@@ -21,16 +21,33 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "When", name: "event_datetime", widget: "datetime"}
       - {label: "Where", name: "event_location", widget: "string"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Short Description", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Show On Front", name: "show_front", widget: "boolean"}
+  - name: "campaign" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Campaign" # Used in the UI, ie.: "New Post"
+    folder: "site/content/campaign" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Short Description", name: "summary", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "working_group" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Working Group" # Used in the UI, ie.: "New Post"
     folder: "site/content/working_group" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "for_members" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "For Members pages" # Used in the UI, ie.: "New Post"
+    folder: "site/content/for_members" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -47,15 +64,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string} 
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: "Intro Blurb", name: intro_blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-      - file: "site/content/priorities.md"
-        label: "Our Priorities"
-        name: "priorities"
+      - file: "site/content/about/_index.md"
+        label: "About Us"
+        name: "about"
         fields:
           - {label: Title, name: title, widget: string} 
           - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Definition of Democratic Socialism, name: democratic_socialism_definition, widget: text}
+          - {label: Description of DSA, name: dsa_definition, widget: text}
           - label: Priorities
             name: priorities
             widget: list
@@ -63,3 +80,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: text}
               - {label: Image, name: image, widget: image}
+          - {label: Where the chapter covers, name: where, widget: text}
+      - file: "site/content/for_members/_index.md"
+        label: "For Members"
+        name: "for_members"
+        fields:
+          - {label: Title, name: title, widget: string} 
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+      - file: "site/content/get_involved/_index.md"
+        label: "Get Involved"
+        name: "get_involved"
+        fields:
+          - {label: Title, name: title, widget: string} 
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"}
