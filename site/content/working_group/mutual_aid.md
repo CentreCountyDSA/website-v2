@@ -1,6 +1,6 @@
 ---
 title: Mutual Aid
-Subtitle: Serve the community
+subtitle: Helping the Community
 image: /img/blog-chemex.jpg
 ---
 
