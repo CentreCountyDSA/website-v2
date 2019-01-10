@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<!--Header-->
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+
+<!-- Link to Bylaws -->
+<a href="/for_members/bylaws">Bylaws</a>
+
+<!-- New Member Info -->
+<a href="/for_members/new_member_info">New Member Info</a>
+
+<!-- Downloads -->
+<a href="/for_members/downloads">Downloads</a>
+
+{{ end }}

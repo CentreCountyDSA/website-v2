@@ -1,9 +1,8 @@
 ---
 title: "Downloads"
-subtitle: Important Documents
+subtitle: PDFs, Flyers, etc
 image: /img/home-jumbotron.jpg
-type: for_members
-layout: downloads
+layout: new_member_info
 ---
 
-<h2>Downloads</h2>
+# Downloads

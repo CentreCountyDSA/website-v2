@@ -1,25 +1,20 @@
 <div class="bg-off-white pv4">
-	<div class="ph3 mw7 center">
+    <div class="ph3 mw7 center">
 
-		<h2 class="f2 b lh-title mb3">Upcoming events</h2>
+        <h2 class="f2 b lh-title mb3">Upcoming events</h2>
 
-		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-			{{ range sort (where (where .Data.Pages "Type" "event") ".Params.show_front" "==" true) ".Params.event_datetime" }}
-				<div class="ph1-ns w-50-ns flex">
-					<a href="{{ .Permalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-						<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
-						<p class="mb0">{{ dateFormat "Monday, Jan 2, 2006" .Params.event_datetime }}</p>
-						<p class="mb0">{{ dateFormat "3:04 PM" .Params.event_datetime}}</p>
-						<p>{{ .Params.event_location }}</p>
-						<p class="link b dib black mb0">Read more →</p>
-					</a>
-				</div>
-			{{ end }}
-		</div>
+        <div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+            {{ range sort (where .Data.Pages "Section" "event") ".Params.event_datetime" }}
+                {{ if gt (time .Params.event_datetime) now }}
+                    {{ partial "event_preview" . }}
+                {{ end }}
+            {{ end }}
+        </div>
 
-		<div class="tc">
-			<a href="/events" class="btn raise">Read more</a>
-		</div>
+        <div class="tc">
+            <a href="/event" class="btn raise">See All Events</a>
+        </div>
 
-	</div>
+    </div>
 </div>
+    

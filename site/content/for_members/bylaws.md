@@ -1,9 +1,14 @@
 ---
 title: "Bylaws"
-subtitle: How we govern ourselves
+subtitle: The rules of governing
 image: /img/home-jumbotron.jpg
-type: for_members
 layout: bylaws
 ---
 
-<h2>Bylaws</h2>
+# DSA Centre County Chapter Bylaws
+
+## Section 1
+
+## Section 2
+
+## Section 3

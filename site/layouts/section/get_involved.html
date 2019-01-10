@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<!--Header-->
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+
+<div class="bg-off-white pv4">
+    <div class="ph3 mw7 center">    
+        <div class="flex-ns mhn2-ns mb3">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+<!-- Events -->
+
+<div class="bg-off-white pv4">
+	<div class="ph3 mw7 center">
+        
+        <h2 class="f2 b lh-title mb3">Upcoming Events</h2>
+
+		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+            {{ $events := where .Site.RegularPages "Section" "event" }}
+            {{ range sort $events ".Params.event_datetime" }}
+                {{ if gt (time .Params.event_datetime) now }}
+                    {{ partial "event_preview" . }}
+                {{ end }}
+			{{ end }}
+		</div>
+
+		<div class="tc">
+			<a href="/event" class="btn raise">Read more</a>
+		</div>
+
+	</div>
+</div>
+
+<!-- Working Groups -->
+
+<div class="bg-off-white pv4">
+    <div class="ph3 mw7 center">
+        <h2 class="f2 b lh-title mb3">Our working groups</h2>
+        <p>Do you have interest in a specific area pertaining to socialism?</p>
+
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range where .Site.RegularPages "Section" "working_group" }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+
+<!-- Current Campaigns -->
+
+<div class="bg-off-white pv4">
+    <div class="ph3 mw7 center">
+        <h2 class="f2 b lh-title mb3">Our current campaigns</h2>
+        <p>Campaigns are organized by working groups as a way to publically work towards the goals of the working group.</p>
+
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range where .Site.RegularPages "Section" "campaign" }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+
+{{end}}

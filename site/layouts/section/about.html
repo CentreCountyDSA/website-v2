@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<!--Header-->
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+
+<!-- About DSA -->
+<div class="bg-grey-1 pv4">
+    <div class="flex-l mhn1-l ph3 center mw7">
+        <h2 class="f2 b lh-title mb2 w-40-l">What is Democratic Socialism?</h2>
+        <p class="w-60-l mb0">{{.Params.democratic_socialism_definition}}</p>
+    </div>
+</div>
+
+<div class="bg-grey-1 pv4">
+    <div class="flex-l mhn1-l ph3 center mw7">
+        <h2 class="f2 b lh-title mb2 w-40-l">What is DSA?</h2>
+        <p class="w-60-l mb0">{{.Params.dsa_definition}}</p>
+    </div>
+</div>
+
+<!-- Priorities -->
+<h2 class="f2 b lh-title mb2 w-40-l">Our Priorities</h2>
+<div class="bg-off-white pv4">
+    <div class="ph3 mw7 center">    
+        <div class="flex-ns mhn2-ns mb3">
+            {{ range .Params.priorities }}
+            <div class="ph2-ns w-50-ns">
+                <img src="{{.image}}" alt="" class="center db mb3" style="width: 240px">
+                <p style="text-align: center"><strong>{{.title}}</strong></p>
+                <p style="text-align: center">{{.description}}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<!-- Where we organize-->
+<h2 class="f2 b lh-title mb2 w-40-l">Where we Organize</h2>
+<div class="bg-off-white pv4">
+    <div class="ph3 mw7 center">    
+            {{ .Content }}
+    </div>
+</div>
+
+{{ end }}
