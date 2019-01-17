@@ -1,11 +1,10 @@
 ---
 title: Something Fake Event
-event_datetime: 2019-01-10 18:00:00
-event_location: "TBD"
-description: >-
-  Test
+event_datetime: 2019-01-21T23:00:00.000Z
+event_location: TBD
+description: 'Test Jan 21, 6 PM EST'
 image: /img/blog-chemex.jpg
-show_front: true
 ---
-
 THIS IS A BUNCH OF TEXT
+
+# Headline
