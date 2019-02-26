@@ -17,6 +17,6 @@ summary: Our first campaign
 * Top 5 Enforcement Tools For Local Minumum Wage Laws (National Employment Law Project, 2015, 3 pages)
     * [Download PDF](/img/Policy-Brief-Top-Five-Enforcement-Tools-Local-Minimum-Wage.pdf)
 * City Strategies to Combat Wage Theft and Empower Workers (The Center for Popular Democracy/Public Welfare Foundation, 2014, 9 pages)
-    * [Download PDF](City-Strategies-to-Combat-Wage-Theft-and-Empower-Workers.pdf)
+    * [Download PDF](/img/City-Strategies-to-Combat-Wage-Theft-and-Empower-Workers.pdf)
 * Worker Rights Boards Manual (From Jobs with Justice)
     * [Download .doc](/img/LOCAL WRB MAUNUAL.doc)
