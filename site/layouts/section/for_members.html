@@ -1,15 +1,18 @@
 {{ define "main" }}
 
 <!--Header-->
-{{ partial "page-header" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
+{{ partial "page-header" (dict "title" .Title "subtitle" .Params.subtitle) }}
 
 <!-- Link to Bylaws -->
 <a href="/for_members/bylaws">Bylaws</a>
+<br/>
 
 <!-- New Member Info -->
 <a href="/for_members/new_member_info">New Member Info</a>
+<br/>
 
 <!-- Downloads -->
 <a href="/for_members/downloads">Downloads</a>
+<br/>
 
 {{ end }}

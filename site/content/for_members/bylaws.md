@@ -2,6 +2,7 @@
 title: Bylaws
 subtitle: The rules of governing
 image: ''
+layout: bylaws
 ---
 # Bylaws of the Centre County PA Local Chapter of the Democratic Socialists of America
 
