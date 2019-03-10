@@ -3,10 +3,10 @@
 <!--Header-->
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-<!--Upcoming Events-->
-{{ partial "homepage/events" . }}
-
 <!--Latest Blog Posts-->
 {{ partial "homepage/blog_latest" . }}
+
+<!-- Gcal -->
+{{ partial "google-calendar" }}
 
 {{ end }}

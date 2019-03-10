@@ -11,29 +11,6 @@
     </div>
 </div>
 
-<!-- Events -->
-
-<div class="bg-off-white pv4">
-	<div class="ph3 mw7 center">
-        
-        <h2 class="f2 b lh-title mb3">Upcoming Events</h2>
-
-		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-            {{ $events := where .Site.RegularPages "Section" "event" }}
-            {{ range sort $events ".Params.event_datetime" }}
-                {{ if gt (time .Params.event_datetime) now }}
-                    {{ partial "event_preview" . }}
-                {{ end }}
-			{{ end }}
-		</div>
-
-		<div class="tc">
-			<a href="/event" class="btn raise">Read more</a>
-		</div>
-
-	</div>
-</div>
-
 <!-- Working Groups -->
 
 <div class="bg-off-white pv4">
@@ -67,5 +44,8 @@
         </ul>
     </div>
 </div>
+
+<!-- Gcal -->
+{{ partial "google-calendar" (dict )}}
 
 {{end}}

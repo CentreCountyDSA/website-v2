@@ -13,12 +13,6 @@ Defined in site/static/admin/config.yml so that the admin interface can edit the
     * intro_blurb
       * heading
       * text
-  * event
-    * title
-    * event_date
-    * description
-    * image
-    * show_front (boolean) - show on front page or not
 
 Note: *title* and *date* can be accessed via *.Title* and *.Date*  while others are accessed via *.Params.<custom_var_name>*
 
