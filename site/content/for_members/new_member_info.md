@@ -5,9 +5,11 @@ image: /img/home-jumbotron.jpg
 ---
 ## **New Member Info**
 
-
-
 Are you a new DSA member? Are you interested in socialist organizing and not sure where to start? You're in the right place!
+
+
+
+****
 
 **Learn about our priorities as a chapter**
 
@@ -17,6 +19,8 @@ We reassess our priorities every April at our DSA Centre County Convention.
 
 
 
+****
+
 **Join one of our working groups**
 
 Our working groups focus on particular aspects of our priorities by building campaigns and providing education to the rest of the chapter. Working groups are where the work gets done. 
@@ -25,7 +29,7 @@ We currently have working groups for: Labor, Electoral, Political Education, Mut
 
 _You do not need to be a DSA member to join a working group._
 
-__
+****
 
 **Come to an event this month**
 
@@ -33,7 +37,7 @@ At the general meeting we will announce the major events for the month, which wi
 
 We will send out updates through our main email list if there are changes to any of these events. If you came to this meeting we will make sure to put you on that email list serve! At the bottom of our weekly emails you will find a link to our  Centre County DSA Google calendar.
 
-
+****
 
 **Become an official DSA member by paying your national dues**
 
@@ -45,7 +49,7 @@ Dues pay for national events, the salaries of DSA’s staff and organizers and n
 
 Becoming a DSA member makes you eligible to run for office in our chapter, vote on chapter business during regular meetings, and will also let you join the Discourse, DSA’s online discussion board.
 
-
+****
 
 **Support our chapter by signing up for local dues**
 
@@ -57,7 +61,7 @@ You are encouraged to pay what you can afford, but you can donate at any level a
 
 Local dues do not confer any additional privileges. 
 
-
+****
 
 **Contact Us**
 
