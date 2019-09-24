@@ -1,6 +1,6 @@
 ---
 title: New Member Info
-subtitle: A Useful Resource
+subtitle: New to DSA? Start here!
 image: /img/home-jumbotron.jpg
 ---
 # New Member Info
