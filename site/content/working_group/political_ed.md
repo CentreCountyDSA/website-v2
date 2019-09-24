@@ -3,5 +3,4 @@ title: Political Education
 subtitle: Learn About Socialism
 image: /img/blog-chemex.jpg
 ---
-
-THIS IS WHERE A FULL DESCRIPTION OF THE GROUP GOES
+Political Education is a working group focused on educating the community and developing the politics of our members.
