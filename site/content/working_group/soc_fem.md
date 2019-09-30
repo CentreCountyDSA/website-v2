@@ -1,7 +1,6 @@
 ---
 title: Socialist Feminism
-subtitle: You can't have socialism without feminism.
+subtitle: Intersectional solidarity!
 image: /img/blog-chemex.jpg
 ---
-
-THIS IS WHERE A FULL DESCRIPTION OF THE GROUP GOES
+The Socialist Feminist is temporarily on hold in 2019 while its key members are at limited capacity. Are you interested in taking up leadership in the socialist feminist working group? Get in touch via email: centrecodsa@gmail.com
