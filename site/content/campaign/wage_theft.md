@@ -2,7 +2,11 @@
 title: Wage Theft
 subtitle: Our first campaign
 image: ''
-summary: Our first campaign
+summary: >-
+  Wage Theft affects thousands of workers in Pennsylvania every day. Does your
+  boss ask you to clock out of your job before you actually leave? Do you
+  receive payments in cash instead of with a check or direct deposit? You might
+  be experiencing wage theft. Read more below!
 ---
 ![Wage Theft Flyer](/img/flyer.png)
 
