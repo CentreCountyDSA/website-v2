@@ -18,16 +18,16 @@ dsa_definition: >-
   tactics, from legislative to direct action, to fight for reforms that empower
   working people.
 priorities:
-  - description: Mutual aid and community defense is very important.
+  - description: Prioritizing the safety and wellbeing of our community
     title: Mutual Aid & Community Defense
     image: img/illustrations-coffee.svg
-  - description: Is our children learning?
+  - description: Socialist political education and discussion
     title: Raising Socialist Conciousness
     image: /img/illustrations-coffee-gear.svg
-  - description: Can't have socialism without feminism
+  - description: 'Addressing the oppression of women, people of color, and other groups'
     title: Socialist Feminism
     image: img/illustrations-coffee-gear.svg
-  - description: Unions R Cool
+  - description: 'Campaigns for raising the wage, unionization, and more'
     title: Supporting Working People
     image: img/illustrations-coffee.svg
 where: >-
